@@ -163,8 +163,101 @@ footer {
 
 
 /* =-=-=-=- MEDIA QUERIES =-=-=-=- */
-@media (min-width: 780px) {
+@media (max-width: 780px) {
     /* ---- Header ---- */
-    /* ---- Main ---- */
+    header ul li a {
+        margin-left: 10px;
+    }
+    .logo {
+        margin: 10px 0 0 20px;
+    }
+    /* --- Galeria fotos --- */
+    .imagenChica {
+        width: 250px;
+    }
+    .imagenGrande {
+        width: 160px;
+    }
     /* ---- Footer ---- */
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0 40px 0;
+    }
+    .blockLeft {
+        flex-direction: column;
+    }
+    .blockLeft a {
+        margin-bottom: 20px;
+    }
+    .blockLeft ul li p {
+        width: 200px;
+    }
+    .blockCenter ul {
+        list-style: none;
+        margin: 25px 0 25px 0;
+        text-align: center;
+    }
+
+}
+
+/* ==== MOBILE ==== */
+@media (max-width: 400px) { 
+       /* Header */
+    header {
+        justify-content: space-between;
+       }
+       header ul li a {
+        margin-left: 0px;
+        width: 40px;
+        font-size: 10px;
+    }
+    /* --- Galeria fotos --- */
+.imagenChica {
+    width: 150px;
+}
+.imagenGrande {
+    width: 150px;
+}
+.galeria {
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "topLeft topRight"
+    "topSecondLeft topSecondRight"
+     "midLeft midRight"
+     "bottomLeft bottomRight"
+     "bottomAlone bottomAlone";
+    margin: 10px;
+}
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9 {
+    place-self: center;
+}
+.img1 {
+    grid-area: topLeft;
+}
+.img2 {
+    grid-area: topRight;
+}
+.img3 {
+    grid-area: topSecondRight;
+}
+.img4 {
+    grid-area:  topSecondLeft;
+}
+.img5 {
+    grid-area: midLeft;
+}
+.img6 {
+    grid-area: midRight;
+}
+.img7 {
+    grid-area: bottomRight;
+}
+.img8 {
+    grid-area:  bottomLeft;
+}
+.img9 {
+    margin-top: 20px;
+    grid-area: bottomAlone;
+}
 }

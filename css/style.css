@@ -33,7 +33,6 @@ a, button {
     font-family: 'Anton', sans-serif;
     font-size: 15px;
 }
-
 /* Header */
 header {
     background-color: var(--Gris-fuerte);
@@ -64,7 +63,7 @@ header ul li a {
     width: 350px;
     border-radius: 20px;
 }
-    /* ---- Bloque 01 ---- */
+/* ---- Bloque 01 ---- */
 .blockTop {
     display: flex;
     align-items: center;
@@ -92,7 +91,7 @@ font-size: 22px;
     color: var(--Gris-claro);
     font-size: 30px;
 }
-    /* ---- Bloque 3 recomendaciones ---- */
+/* ---- Bloque 3 recomendaciones ---- */
 .blockTips {
     display: flex;
     align-items: center;
@@ -119,7 +118,7 @@ font-size: 22px;
     font-size: 20px;
     margin-bottom: 60px;
 }
-    /* ---- Bloque con imagen ---- */
+/* ---- Bloque con imagen ---- */
 .blockImg {
     display: flex;
     flex-direction: row-reverse;
@@ -137,7 +136,7 @@ font-size: 22px;
 .blockImg div p {
     font-size: 26px;
 }
-    /* ---- Formulario ---- */
+/* ---- Formulario ---- */
 .blockForm {
     display: flex;
     align-items: center;
@@ -173,7 +172,6 @@ font-size: 22px;
     font-size: 30px;
     color: var(--Gris-claro); 
 }
-
 /* Footer */
 footer {
     display: flex;
@@ -202,7 +200,6 @@ footer {
 .blockLeft ul li p {
     width: 140px;
 }
-
 .blockCenter ul {
     list-style: none;
 }
@@ -213,7 +210,6 @@ footer {
     color: var(--Gris-claro);
     text-decoration: none;
 }
-
 .blockRight {
     display: flex;
     align-items: center;
@@ -223,13 +219,9 @@ footer {
     margin-left: 20px;
 }
 
-
-
-
-
 /* =-=-=-=- MEDIA QUERIES =-=-=-=- */
 
-/* --- TABLET --- */
+/* ==== TABLET ==== */
 @media (max-width: 780px) {
     /* ---- Header ---- */
     header {
@@ -250,9 +242,9 @@ footer {
         width: 250px;
         border-radius: 20px;
     }
-        /* ---- Bloque 01 ---- */
+    /* ---- Bloque 01 ---- */
     .blockTop {
-        margin-top: 20px;
+        margin: 20px 30px 0 30px;
     }
     .blockTopText {
         width: 50%;
@@ -264,7 +256,7 @@ footer {
     .blockTopText p {
     font-size: 20px;
     }
-        /* ---- Bloque 3 recomendaciones ---- */
+    /* ---- Bloque 3 recomendaciones ---- */
     .blockTips {
         display: flex;
         align-items: center;
@@ -291,42 +283,151 @@ footer {
         font-size: 20px;
         margin-bottom: 60px;
     }
-        /* ---- Bloque con imagen ---- */
+    /* ---- Bloque con imagen ---- */
     .imagenRefuerzo {
-        margin: 0 30px 0 30px;
+        margin: 0 30px 0 0px;
         width: 300px;
     }
-    .blockImg div {
-        width: 600px;
+    .blockImg {
+        margin: 20px 30px 30px 30px;
     }
     .blockImg div p {
         font-size: 24px;
     }
-        /* ---- Formulario ---- */
+    /* ---- Formulario ---- */
     .blockForm div {
         width: 500px;
         margin: 0 20px 0 20px;
     }
-    .formularioBottom ul li {
-        list-style: none;
-        margin-top: 20px;
-        font-family: 'Anton', sans-serif;
-        font-size: 24px;
-    }
-    .formularioBottom input {
-        width: 200px;
-        height: 30px;
-    }
-    .formularioBottom li button {
-        width: 240px;
-        height: 60px;
-        margin-top: 30px;
-        background-color: var(--Call-to-action);
-        border-radius: 15px;
-        font-size: 30px;
-        color: var(--Gris-claro); 
-    }
-    
     /* ---- Footer ---- */
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0 40px 0;
+    }
+    .blockLeft {
+        flex-direction: column;
+    }
+    .blockLeft a {
+        margin-bottom: 20px;
+    }
+    .blockLeft ul li p {
+        width: 200px;
+    }
+    .blockCenter ul {
+        list-style: none;
+        margin: 25px 0 25px 0;
+        text-align: center;
+    }
+}
 
+/* ==== MOBILE ==== */
+@media (max-width: 400px) { 
+        /* ---- Header ---- */
+        header ul li a {
+            margin-left: 0px;
+            width: 50px;
+            font-size: 10px;
+        }
+        /* ---- Main ---- */
+        .imgBig {
+            width: 250px;
+            border-radius: 20px;
+        }
+        /* ---- Bloque 01 ---- */
+        .blockTop {
+            flex-direction: column-reverse;
+            text-align: center;
+            margin: 20px 0 0 0;
+        }
+        .blockTopText {
+            width: 100%;
+            margin-right: 0;
+        }
+        .blockTopText h1 {
+        margin: 10px 0px 0px 0px;
+        font-size: 40px;
+        }
+        .blockTopText p {
+        font-size: 20px;
+        margin: 20px;
+        }
+        /* ---- Bloque 3 recomendaciones ---- */
+        .blockTips {
+            flex-direction: column;
+        }
+        .blockTips .icons {
+            margin: 10px 0px 10px 0px;
+        }
+        .blockTips div p {
+            margin-bottom: 30px;
+        }
+        /* ---- Bloque con imagen ---- */
+        .imagenRefuerzo {
+            margin: 0;
+            width: 300px;
+        }
+        .blockImg {
+            flex-direction: column-reverse;
+        }
+        .blockImg div {
+            width: 300px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .blockImg div h2 {
+            font-size: 32px;
+            margin: 0px 0 30px 0; 
+        }
+        .blockImg div p {
+            font-size: 20px;
+        }
+        /* ---- Formulario ---- */
+        .blockForm {
+            margin-bottom: 60px;
+            flex-direction: column;
+            text-align: center;
+        }
+        .blockForm div {
+            width: 300px;
+            margin-bottom: 30px;
+        }
+        .blockForm h2 {
+            font-size: 40px;
+            margin-bottom: 30px; 
+        }
+        .blockForm p {
+            font-size: 20px;
+        }
+        .formularioBottom ul li {
+            font-size: 20px;
+        }
+        .formularioBottom input {
+            width: 160px;
+        }
+        .formularioBottom li button {
+            width: 220px;
+            margin-top: 20px;
+            border-radius: 25px;
+        }
+        /* ---- Footer ---- */
+        footer {
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 0 40px 0;
+        }
+        .blockLeft {
+            flex-direction: column;
+        }
+        .blockLeft a {
+            margin-bottom: 20px;
+        }
+        .blockLeft ul li p {
+            width: 200px;
+        }
+        .blockCenter ul {
+            list-style: none;
+            margin: 25px 0 25px 0;
+            text-align: center;
+        }   
 }
