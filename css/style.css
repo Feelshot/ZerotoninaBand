@@ -91,6 +91,14 @@ font-size: 22px;
     color: var(--Gris-claro);
     font-size: 30px;
 }
+    /*ANIMACION BOTON*/
+.blockTopText button:hover {
+    width: 250px;
+    height: 70px;
+    border-radius: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
 /* ---- Bloque 3 recomendaciones ---- */
 .blockTips {
     display: flex;
@@ -172,6 +180,14 @@ font-size: 22px;
     font-size: 30px;
     color: var(--Gris-claro); 
 }
+    /*ANIMACION BOTON*/
+    .formularioBottom button:hover {
+        width: 250px;
+        height: 70px;
+        border-radius: 20px;
+        transition: 0.3s;
+        cursor: pointer;
+    }
 /* Footer */
 footer {
     display: flex;
