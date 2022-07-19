@@ -238,7 +238,7 @@ footer {
 /* =-=-=-=- MEDIA QUERIES =-=-=-=- */
 
 /* ==== TABLET ==== */
-@media (max-width: 780px) {
+@media (min-width: 401px) and (max-width: 780px) {
     /* ---- Header ---- */
     header {
         display: flex;
@@ -338,7 +338,7 @@ footer {
 }
 
 /* ==== MOBILE ==== */
-@media (max-width: 400px) { 
+@media (min-width: 100px) and (max-width: 400px) { 
         /* ---- Header ---- */
         header ul li a {
             margin-left: 0px;
